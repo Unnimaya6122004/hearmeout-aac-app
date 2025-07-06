@@ -1,0 +1,128 @@
+/* 🌈 GamePage.css — Updated for Better Visual Harmony and Accessibility */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFF8E1; /* Soft outer cream background */
+  font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: #B3E5FC;  /* Harmonized soft sky blue */
+  padding: 14px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0288D1;
+}
+
+/* Game Page Container */
+.game-page {
+  background: #E1F5FE; /* Light calming aqua */
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.game-page h1 {
+  color: #0D47A1;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #37474F;
+}
+
+/* Search Input */
+.game-search {
+  padding: 0.6rem 1rem;
+  border: 2px solid #90CAF9;
+  border-radius: 25px;
+  outline: none;
+  width: 260px;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Game Card Grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+/* Game Card */
+.game-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  padding: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.game-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 0.8rem;
+}
+
+.game-details h3 {
+  color: #F06292;
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.game-desc {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Play Now Button */
+.play-button {
+  background: linear-gradient(to right, #4FC3F7, #0288D1);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.play-button:hover {
+  background: linear-gradient(to right, #0288D1, #4FC3F7);
+  transform: scale(1.05);
+  color: #fff;
+}

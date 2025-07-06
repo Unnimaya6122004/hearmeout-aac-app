@@ -1,0 +1,198 @@
+/* src/components/LearnPage.css */
+
+.learn-page {
+background: linear-gradient(to bottom right, #e0f7fa, #b3e5fc);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Comic Sans MS', 'Baloo Bhai 2', cursive;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: #3b0764;
+  margin-bottom: 1.5rem;
+}
+
+.category-buttons {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.category-buttons button {
+  background-color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.category-buttons .active {
+  background-color: #38bdf8;
+  color: white;
+}
+
+.learning-section h3,
+.quiz-section h3 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #7c3aed;
+}
+
+.learning-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.learn-card {
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.learn-card:hover {
+  transform: scale(1.05);
+}
+
+.learn-card .emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-section {
+  margin-top: 2rem;
+}
+
+.quiz-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.quiz-options button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #f9a8d4;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quiz-options button:hover {
+  background-color: #ec4899;
+  color: white;
+}
+
+.feedback {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.next-button {
+  margin-top: 2rem;
+  background-color: #4ade80;
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #22c55e;
+  color: white;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #f87171;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.game-grid-modal {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.game-card-mini {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 120px;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-card-mini:hover {
+  transform: scale(1.1);
+  background-color: #dbeafe;
+}
+
+.game-card-mini img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,69 @@
+/* src/styles/MatchGame.css */
+.match-container {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(to right, #d7efff, #f5f5dc);
+  min-height: 100vh;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+h2 {
+  font-size: 32px;
+  color: #5d1049;
+}
+
+.game-card {
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.emoji {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.options button {
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #b2ebf2;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.options button:hover {
+  background-color: #4dd0e1;
+}
+
+.feedback {
+  font-size: 20px;
+  color: #d84315;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.result-screen {
+  background-color: #fff8e1;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.result-screen h3 {
+  color: #4caf50;
+}
+
+.timer {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
